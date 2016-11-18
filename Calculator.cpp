@@ -20,7 +20,7 @@ double mult (float a, float b)
 
 double div (float a, float b)
 {
-	return (float)a/b;
+	return a/b;
 }
 
 double pow (float a)
@@ -30,7 +30,7 @@ double pow (float a)
 
 	for (int i=1; i< extent; i++) 
 	{
-	a = a * a2;
+	a *= a2;
 	}
 
 	return(float) a;
@@ -57,7 +57,6 @@ float b = 10.0;
  cout <<"a-b = " << sub(a,b) << endl;
  cout <<"a*b = " << mult(a,b) << endl;
  cout <<"a/b = " << div(a,b) << endl;
- if (b==0) cout <<"Error" << endl;
  cout <<"a^b = " << pow(a) << endl;
  cout <<"sqrt a = " << sqrt(a) << endl;
  return 0;
