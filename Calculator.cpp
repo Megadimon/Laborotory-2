@@ -51,8 +51,8 @@ double pow (float a)
 }
 int main(void)
 {
-float a = 7.0;
-float b = 10.0;
+float a = 9.0;
+float b = 1.0;
  cout <<"a+b = " << sum(a,b) << endl;
  cout <<"a-b = " << sub(a,b) << endl;
  cout <<"a*b = " << mult(a,b) << endl;
