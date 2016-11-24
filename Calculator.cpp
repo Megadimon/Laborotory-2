@@ -1,6 +1,7 @@
-
+#include <conio.h>
 #include <iostream>
 #include <conio.h>
+using namespace std;
 
 double sum ( float a, float b )
 {
@@ -20,7 +21,7 @@ double mult (float a, float b)
 
 double div (float a, float b)
 {
-	return a/b;
+	return (float)a/b;
 }
 
 double pow (float a)
@@ -36,13 +37,13 @@ double pow (float a)
 	return(float) a;
 }
 
-	double sqrt (float a)
+	float sq (float a)
 {	
-	double n=0.0;
-	double t=0.0;
+	float n=0.0;
+	float t=0.0;
 	while ((t-n)>0.000001 && (t-n)<-0.000001)
 	{
-		double (t= (n+a/n)/2);
+	        (t =(float)(n+(float)a/n)/2);
 		t = n;
 
 	}
@@ -58,6 +59,6 @@ float b = 1.0;
  cout <<"a*b = " << mult(a,b) << endl;
  cout <<"a/b = " << div(a,b) << endl;
  cout <<"a^b = " << pow(a) << endl;
- cout <<"sqrt a = " << sqrt(a) << endl;
+ cout <<"sqrt a = " << sq(a) << endl;
  return 0;
  } 
